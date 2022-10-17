@@ -1,3 +1,18 @@
-@import "./utils/variables";
-@import "./layouts/header";
-@import "./layouts/nav";
+@charset "UTF-8";
+
+@import "utils/variables";
+@import "utils/mixins";
+
+@import "base/base";
+@import "base/fonts";
+
+@import "layouts/header";
+@import "layouts/hook";
+@import "layouts/functioning";
+@import "layouts/restaurants";
+@import "layouts/menus";
+@import "layouts/footer";
+
+@import "components/localization";
+@import "components/cards";
+

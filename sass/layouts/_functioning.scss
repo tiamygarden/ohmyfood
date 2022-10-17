@@ -1,0 +1,60 @@
+.functioning {
+    padding: ($omfPadding + 1rem) $omfPadding;
+
+    &__title {
+        margin-top: 0;
+    }
+
+    &__steps {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        counter-reset: compteListe;
+
+        @media (min-width: 64rem) {
+            display: flex;
+        }
+    }
+
+    &__step {
+        padding: 1.5rem;
+        margin: 1rem 0 1rem 0.75rem;
+        box-shadow: 0.25rem 0.25rem 0.5rem rgba(0, 0, 0, 0.125);
+        border-radius: 1.25rem;
+        background-color: #f6f6f6;
+        display: flex;
+        position: relative;
+
+        @media (min-width: 64rem) {
+            flex: 1;
+            margin: 0 0 0 2rem;
+
+            &:first-child {
+                margin-left: 0.75rem;
+            }
+        }
+
+        &:first-child {
+            margin-top: 0;
+        }
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        &::before {
+            counter-increment: compteListe 1;
+            content: counter(compteListe) " ";
+            background: $color-primary;
+            height: 1.5rem;
+            width: 1.5rem;
+            border-radius: 100px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            position: absolute;
+            left: -0.75rem;
+        }
+    }
+}

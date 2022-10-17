@@ -1,0 +1,16 @@
+.localization {
+    display: flex;
+    justify-content: center;
+    padding: 1.25rem $omfPadding;
+    background-color: rgb(243, 243, 243);
+    font-size: 1.2rem;
+    position: relative;
+
+    &__icon {
+        margin-right: 1rem;
+    }
+
+    &__text {
+        font-weight: 700;
+    }
+}

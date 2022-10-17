@@ -1,47 +1,173 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/7d17636476.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./public/css/style.css">
     <title>Le délice des sens</title>
+    <meta name="title" content="Le délice des sens">
+    <meta name="description"
+          content="Ohmyfood! est une entreprise de commande de repas en ligne. Notre concept permet aux utilisateurs de composer leur propre menu et
+          réduire leur temps d’attente dans les restaurants.">
 </head>
 <body>
-Le délice des sens
-
-ENTRÉES
-
-Tartare de thon
-Assaisonné au yuzu 25€
-
-Bouchée de homard croustillant
-Et sa farandole de petits légumes 35€
-
-Velouté de cèpes
-Aux truffes 20€
-
-PLATS
-
-Poulet rôti aux herbes de
-provence
-Et sa crème de truffe 40€
-
-Langouste rôtie
-Et ses légumes de saison 35€
-
-Côte de boeuf angus
-Et sa purée de panais 44€
-
-
-DESSERTS
-
-Farandole de desserts
-Du chef 18€
-
-Crème brulée
-Revisitée 22€
-
-Tiramisu
-À la noisette 23€
-
-Commander
+<header class="header header--withBackArrow">
+    <div class="restaurantContainer">
+        <a href="./index.html"><i class="fas fa-arrow-left header__arrow"></i></a>
+        <h1 class="header__logo">ohmyfood</h1>
+    </div>
+</header>
+<img src="./images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="">
+<main>
+    <header>
+        <h2>Le délice des sens</h2>
+        <button>
+            <i class="far fa-heart fa-2x"></i>
+            <i class="fas fa-heart fa-2x"></i>
+        </button>
+    </header>
+    <div>
+        <section>
+            <h3>Entrées</h3>
+            <section>
+                <header>
+                    <h4>Tartares de thon</h4>
+                    <p>Assaisonné au yuzu</p>
+                </header>
+                <div>25€</div>
+                <div>
+                    <div>
+                        <i class="fas fa-check"></i>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <header>
+                    <h4>Bouchée de homard croustillant</h4>
+                    <p>Et sa farandole de petits légumes</p>
+                </header>
+                <div>35€</div>
+                <div>
+                    <div>
+                        <i class="fas fa-check"></i>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <header>
+                    <h4>Velouté de cèpes</h4>
+                    <p>Aux truffes</p>
+                </header>
+                <div>20€</div>
+                <div>
+                    <div>
+                        <i class="fas fa-check"></i>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section>
+            <h3>Plats</h3>
+            <section>
+                <header>
+                    <h4>Poulet rôti aux herbes de provences</h4>
+                    <p>Et sa crème de truffe</p>
+                </header>
+                <div>40€</div>
+                <div>
+                    <div>
+                        <i class="fas fa-check"></i>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <header>
+                    <h4>Langouste rôtie</h4>
+                    <p>Et ses légumes de saison</p>
+                </header>
+                <div>35€</div>
+                <div>
+                    <div>
+                        <i class="fas fa-check"></i>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <header>
+                    <h4>Côte de boeuf angus</h4>
+                    <p>Et sa purée de panais</p>
+                </header>
+                <div>44€</div>
+                <div>
+                    <div>
+                        <i class="fas fa-check"></i>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section>
+            <h3>Desserts</h3>
+            <section>
+                <header>
+                    <h4>Farandole de desserts</h4>
+                    <p>Du chef</p>
+                </header>
+                <div>18€</div>
+                <div>
+                    <div>
+                        <i class="fas fa-check"></i>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <header>
+                    <h4>Crème brulée</h4>
+                    <p>Revisitée</p>
+                </header>
+                <div>22€</div>
+                <div>
+                    <div>
+                        <i class="fas fa-check"></i>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <header>
+                    <h4>Tiramisu</h4>
+                    <p>A la noisette</p>
+                </header>
+                <div>23€</div>
+                <div>
+                    <div>
+                        <i class="fas fa-check"></i>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </div>
+    <div>
+        <button>Commander</button>
+    </div>
+</main>
+<footer class="footer">
+    <div class="container">
+        <span class="footer__logo">ohmyfood</span>
+        <ul  class="footer__list">
+            <li class="footer__listLi">
+                <a class="footer__link" href="#"><i class="footer__icon fas fa-utensils"></i>Proposer un restaurant</a>
+            </li>
+            <li class="footer__listLi">
+                <a class="footer__link" href="#"><i class="footer__icon fas fa-hands-helping"></i>Devenir partenaire</a>
+            </li>
+            <li class="footer__listLi">
+                <a class="footer__link" href="#">Mentions légales</a>
+            </li>
+            <li class="footer__listLi">
+                <a class="footer__link" href="mailto:contact@ohmyfood.com">Contact</a>
+            </li>
+        </ul>
+    </div>
+</footer>
 </body>
 </html>

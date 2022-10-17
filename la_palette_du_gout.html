@@ -1,45 +1,173 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/7d17636476.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./public/css/style.css">
     <title>La palette du gout</title>
+    <meta name="title" content="La palette du gout">
+    <meta name="description"
+          content="Ohmyfood! est une entreprise de commande de repas en ligne. Notre concept permet aux utilisateurs de composer leur propre menu et
+          réduire leur temps d’attente dans les restaurants.">
 </head>
 <body>
-La palette du goût
-
-ENTRÉES
-
-Fricassée d'escargot
-Au pimet d'espelette 25€
-
-Foie gras de canard mi-cuit
-Et ses copeaux de truffe noire 35€
-
-Oeuf au plat
-Assaisonné à la truffe sur lit de .... 20€
-
-PLATS
-
-Filet de boeuf aux herbes
-Accompagné de sa ribambelle de légu... 40€
-
-Parmentier de queue de boeuf
-À la truffe noire sur sa purée de panais 35€
-
-Filet de Turbot
-Aux agrumes 44€
-
-DESSERTS
-
-Paris-Brest
-Revisité 18€
-
-Macaron au chocolat d 'exception
-Et glace à la vanille de Madagascar 22€
-
-Mousse au chocolat
-Au piment d'espelette et à la truffe noire 23€
-
-Commander
+<header class="header header--withBackArrow">
+    <div class="restaurantContainer">
+        <a href="./index.html"><i class="fas fa-arrow-left header__arrow"></i></a>
+        <h1 class="header__logo">ohmyfood</h1>
+    </div>
+</header>
+<img src="./images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="">
+<main>
+    <header>
+        <h2>La palette du goût</h2>
+        <button>
+            <i class="far fa-heart fa-2x"></i>
+            <i class="fas fa-heart fa-2x"></i>
+        </button>
+    </header>
+    <div>
+        <section>
+            <h3>Entrées</h3>
+            <section>
+                <header>
+                    <h4>Fricassée d'escargot</h4>
+                    <p>Au piment d'espelette</p>
+                </header>
+                <div>25€</div>
+                <div>
+                    <div>
+                        <i class="fas fa-check"></i>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <header>
+                    <h4>Foie gras de canard mi-cuit</h4>
+                    <p>Et ses copeaux de truffe noire</p>
+                </header>
+                <div>35€</div>
+                <div>
+                    <div>
+                        <i class="fas fa-check"></i>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <header>
+                    <h4>Oeuf au plat</h4>
+                    <p>Assaisonné à la truffe sur lit de poireaux</p>
+                </header>
+                <div>20€</div>
+                <div>
+                    <div>
+                        <i class="fas fa-check"></i>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section>
+            <h3>Plats</h3>
+            <section>
+                <header>
+                    <h4>Filet de boeuf aux herbes</h4>
+                    <p>Accompagné de sa ribambelle de légumes</p>
+                </header>
+                <div>40€</div>
+                <div>
+                    <div>
+                        <i class="fas fa-check"></i>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <header>
+                    <h4>Parmentier de queue de boeuf</h4>
+                    <p>A la truffe noire sur sa purée de panais</p>
+                </header>
+                <div>35€</div>
+                <div>
+                    <div>
+                        <i class="fas fa-check"></i>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <header>
+                    <h4>Filet de Turbot</h4>
+                    <p>Aux agrumes</p>
+                </header>
+                <div>44€</div>
+                <div>
+                    <div>
+                        <i class="fas fa-check"></i>
+                    </div>
+                </div>
+            </section>
+        </section>
+        <section>
+            <h3>Desserts</h3>
+            <section>
+                <header>
+                    <h4>Paris-Brest</h4>
+                    <p>Revisité</p>
+                </header>
+                <div>18€</div>
+                <div>
+                    <div>
+                        <i class="fas fa-check"></i>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <header>
+                    <h4>Macaron au chocolat d'exception</h4>
+                    <p>Et glace à la vanille de Madagascar</p>
+                </header>
+                <div>22€</div>
+                <div>
+                    <div>
+                        <i class="fas fa-check"></i>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <header>
+                    <h4>Mousse au chocolat</h4>
+                    <p>Au piment d'espelette et à la truffe noire</p>
+                </header>
+                <div>23€</div>
+                <div>
+                    <div>
+                        <i class="fas fa-check"></i>
+                    </div>
+                </div>
+            </section>
+        </section>
+    </div>
+    <div>
+        <button>Commander</button>
+    </div>
+</main>
+<footer class="footer">
+    <div class="container">
+        <span class="footer__logo">ohmyfood</span>
+        <ul  class="footer__list">
+            <li class="footer__listLi">
+                <a class="footer__link" href="#"><i class="footer__icon fas fa-utensils"></i>Proposer un restaurant</a>
+            </li>
+            <li class="footer__listLi">
+                <a class="footer__link" href="#"><i class="footer__icon fas fa-hands-helping"></i>Devenir partenaire</a>
+            </li>
+            <li class="footer__listLi">
+                <a class="footer__link" href="#">Mentions légales</a>
+            </li>
+            <li class="footer__listLi">
+                <a class="footer__link" href="mailto:contact@ohmyfood.com">Contact</a>
+            </li>
+        </ul>
+    </div>
+</footer>
 </body>
 </html>
