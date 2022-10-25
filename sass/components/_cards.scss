@@ -3,6 +3,12 @@
     flex-direction: column;
     column-gap: 2rem;
     row-gap: 2rem;
+    @media (min-width: 64rem) {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
 }
 
 .card {
@@ -11,12 +17,17 @@
     position: relative;
     text-decoration: none;
     color: inherit;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    @media (min-width: 64rem) {
+        flex: 1;
+        width: 48%;
+    }
 
     &__img {
         height: 12rem;
         width: 100%;
-        border: transparent solid 0;
+        border: 0 solid transparent;
         border-radius: 1rem 1rem 0 0;
         box-shadow: none;
         object-fit: cover;
@@ -36,11 +47,16 @@
         padding: 1rem;
         position: relative;
         display: flex;
+        justify-content: space-between;
         align-items: center;
+        background-color: white;
+        border-radius: inherit;
     }
 
     &__content {
-        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
     }
 
     &__title {
@@ -51,18 +67,16 @@
         margin: 0;
     }
 
-    &__btn {
-        height: 2rem;
-        width: 2rem;
-        background-color: transparent;
-        border: transparent 0 solid;
-        padding: 0;
-        display:flex;
-        align-items:center;
-        justify-content:center;
+    &__like {
+        background-color: white !important;
     }
 
-    &__like {
-        background-color: white!important;
+    &__button {
+        height: 2rem;
+        width: 2rem;
+        background-color: black;
+        border: 0 solid transparent;
+        padding: 0;
+        position: relative;
     }
 }

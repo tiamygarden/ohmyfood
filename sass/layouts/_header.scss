@@ -4,8 +4,10 @@
     position: relative;
     z-index: 1000;
 
-    &--withBackArrow {
-        position: relative;
+    &__logo {
+        font-family: "Shrikhand", "cursive";
+        margin: 0;
+        text-align: center;
     }
 
     &__arrow {
@@ -22,9 +24,7 @@
         color: black;
     }
 
-    &__logo {
-        font-family: "Shrikhand", "cursive";
-        margin: 0;
-        text-align: center;
+    &--withBackArrow {
+        position: relative;
     }
 }

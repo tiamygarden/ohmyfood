@@ -16,17 +16,17 @@
         font-family: "Shrikhand", "cursive";
     }
 
-    &__btn {
+    &__button {
         height: 2rem;
         width: 2rem;
-        background-color: transparent;
-        border: transparent 0 solid;
+        border: 0 solid transparent;
         padding: 0;
-        display:flex;
-        align-items:center;
-        justify-content:center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         cursor: pointer;
         position: relative;
+        background-color: #000;
 
         &:hover::before {
             opacity: 1;
@@ -41,7 +41,7 @@
             left: 0;
             height: 100%;
             width: 100%;
-            background:linear-gradient(0deg, $color-primary 0%,$color-secondary 100%);
+            background: linear-gradient(0deg, $color-primary 0%, $color-secondary 100%);
         }
     }
 
@@ -53,17 +53,150 @@
         left: 0;
         height: 100%;
         width: 100%;
-        display:flex;
-        align-items:center;
-        justify-content:center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         mix-blend-mode: lighten;
     }
 
-    &__btn:hover {
+    &__button:hover {
         .menu__like {
-            &--noBg {
+            &--nobg {
                 opacity: 0;
             }
         }
+    }
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 900px) {
+        flex-direction: column;
+    }
+}
+
+.restaurantMenu {
+    max-width: 100%;
+    overflow: hidden;
+    padding: 0 1rem;
+    @media (min-width: 64rem) {
+        width: 100%;
+    }
+
+    &__title {
+        text-transform: uppercase;
+        position: relative;
+        padding-bottom: 0.5rem;
+        font-weight: normal;
+
+        &::after {
+            content: "";
+            width: 3rem;
+            height: 0.25rem;
+            background-color: $color-tertiary;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+    }
+}
+
+.mealCard {
+    display: flex;
+    background-color: white;
+    border-radius: 1rem;
+    margin: 1rem 0;
+    padding: 1rem;
+    box-shadow: 0.25rem 0.25rem 1rem rgb(0 0 0 / 10%);
+    overflow: hidden;
+    cursor: pointer;
+    max-width: 100%;
+    opacity: 0;
+    animation: appear forwards 1s;
+    @for $i from 1 through 10 {
+        &--#{$i} {
+            animation-delay: 0.5s * $i;
+        }
+    }
+
+    &__header {
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+        flex: 1;
+    }
+
+    &__title {
+        margin: 0;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+    &__subtitle {
+        margin: 0;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        overflow: hidden;
+    }
+
+    &__price {
+        font-weight: bold;
+        display: flex;
+        justify-content: flex-end;
+        align-items: flex-end;
+        padding-left: 0.5rem;
+    }
+
+    &__validation {
+        width: 4rem;
+        background-color: $color-tertiary;
+        margin: -1rem -5rem -1rem 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition-duration: 0.5s;
+    }
+
+    &:hover &__validation {
+        margin-right: -1rem;
+    }
+
+
+    &__wrapIcon {
+        height: 1.6rem;
+        width: 1.6rem;
+        background-color: #fff;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 100px;
+        transform: rotate(180deg);
+        transition-duration: .5s;
+    }
+
+    &:hover &__wrapIcon {
+        transform: rotate(0);
+    }
+
+    &__icon {
+        color: $color-tertiary;
+    }
+}
+
+.wrapBtn {
+    display: flex;
+    text-decoration: none;
+    justify-content: center;
+    padding: 3rem 0;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
     }
 }

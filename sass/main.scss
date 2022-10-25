@@ -2,6 +2,7 @@
 
 @import "utils/variables";
 @import "utils/mixins";
+@import "utils/keyframes";
 
 @import "base/base";
 @import "base/fonts";
@@ -13,6 +14,7 @@
 @import "layouts/menus";
 @import "layouts/footer";
 
+@import "components/loader";
 @import "components/localization";
 @import "components/cards";
 
