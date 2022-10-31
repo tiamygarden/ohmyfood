@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap");
 @keyframes loader {
   100% {
     opacity: 0;
@@ -32,10 +33,6 @@ body, html {
   position: relative;
 }
 
-@font-face {
-  font-family: "Shrikhand";
-  src: local("Shrikhand"), local("Shrikhand"), url(https://fonts.googleapis.com/css2?family=Roboto&family=Shrikhand&display=swap) format("woff2");
-}
 .header {
   padding: 1rem;
   box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.25);
