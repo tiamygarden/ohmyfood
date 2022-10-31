@@ -10,9 +10,8 @@
     &__logo {
         color: white;
         font-family: "Shrikhand", "cursive";
-        margin: 0;
+        margin: 0 0 $omfPadding 0;
         font-size: 1.2rem;
-        margin-bottom: $omfPadding;
     }
 
     &__list {
