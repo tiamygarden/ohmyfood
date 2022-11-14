@@ -427,7 +427,7 @@ body, html {
   padding: 0;
   left: 0;
   top: 0;
-  animation: loader 0.5s 5s both;
+  animation: loader 0.3s 3s both;
 }
 
 .loading {
